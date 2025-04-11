@@ -9,9 +9,9 @@ import {
 export const postRouter = createTRPCRouter({
   hello: publicProcedure
     .input(z.object({ text: z.string() }))
-    .query(({ input }) => {
+    .query(({ ctx, input }) => {
       return {
-        greeting: `Hello ${input.text}`,
+        greeting: `SERVER: Hello ${input.text}. ${ctx.session?.user?.name ? `Logged in as ${ctx.session?.user?.name ?? ""}` : "Not logged in"}`,
       };
     }),
 

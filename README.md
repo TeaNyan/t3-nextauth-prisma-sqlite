@@ -1,6 +1,22 @@
-# Create T3 App
+# T3 App with Prisma, SQLite, NextAuth and ShadCN
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is a [T3 Stack](https://create.t3.gg/) project boilerplate for `create-t3-app` with included NextAuth, ShadCN, SQLite and Prisma.
+
+# How to start?
+
+Add .env with these values
+
+```
+NEXTAUTH_SECRET=""
+NEXTAUTH_URL="http://localhost:3000"
+AUTH_GOOGLE_ID=""
+AUTH_GOOGLE_SECRET=""
+DATABASE_URL="file:./db.sqlite"
+```
+
+# Install
+
+Run `pnpm install` then `npx prisma generate`. After that you should be good to go with `pnpm dev`
 
 ## What's next? How do I make an app with this?
 
