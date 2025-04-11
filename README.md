@@ -1,4 +1,4 @@
-# T3 App with Prisma, SQLite, NextAuth and ShadCN
+# Boilerplate T3 App with Prisma, SQLite, NextAuth and ShadCN
 
 This is a [T3 Stack](https://create.t3.gg/) project boilerplate for `create-t3-app` with included NextAuth, ShadCN, SQLite and Prisma.
 
