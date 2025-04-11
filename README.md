@@ -16,7 +16,7 @@ DATABASE_URL="file:./db.sqlite"
 
 # Install
 
-Run `pnpm install` then `npx prisma generate`. After that you should be good to go with `pnpm dev`
+Run `pnpm install` then `npx prisma generate` then `pnpm db:migrate`. After that you should be good to go with `pnpm dev`.
 
 ## What's next? How do I make an app with this?
 
